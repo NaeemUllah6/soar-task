@@ -4,6 +4,7 @@ import Sidebar from "./layout/sidebar.jsx";
 import Settings from "./pages/settings.jsx";
 import Dashboard from "./pages/dashboard.jsx";
 import Header from "./layout/header.jsx";
+import './index.css'
 
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
         </div>
         <div className="flex justify-start gap-2 bg-white lg:bg-transparent ">
           {/* Sidebar */}
-          <div className=" z-50 max-w-[250px] overflow-auto lg:border-r-2 h-[100%] fixed ">
+          <div className=" z-50 max-w-[250px] custom-scrollbar overflow-auto lg:border-r-2 h-[100%] fixed ">
             <Sidebar />
           </div>
           {/* Main Content */}

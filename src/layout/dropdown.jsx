@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import avataruser from '../assets/images/avatar1.svg'
 function Dropdown() {
-    const [isOpen, setIsOpen] = useState(false); // State to control the dropdown visibility
+    const [isOpen, setIsOpen] = useState(false);
 
-    // Toggle dropdown visibility
+
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
@@ -16,7 +16,7 @@ function Dropdown() {
                 className=""
                 type="button"
             >
-              <img className='w-[35px] h-[35px]' src={avataruser} alt="" />
+                <img className='w-[35px] h-[35px]' src={avataruser} alt="" />
             </button>
 
             {/* Dropdown menu */}
@@ -28,7 +28,7 @@ function Dropdown() {
                     <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
                         <li>
                             <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                               User Profile
+                                User Profile
                             </a>
                         </li>
                         <li>
@@ -36,9 +36,9 @@ function Dropdown() {
                                 Settings
                             </a>
                         </li>
-                     
+
                     </ul>
-                   
+
                 </div>
             )}
         </div>

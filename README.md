@@ -3,12 +3,12 @@ Soar Task is a web-based application built using React.js (v19) and styled with 
 
 ### Prerequisites
 What are the necessary things you need to install to run the software and how to install them:
-```bash
+
 - Node js (v-20.13.1)
-```
+
 ### Getting Started
 Go to the folder and open terminal or CMD in that folder and run the following commands
--   `git clone ` (Make sure you have an access to the repositry)
+-   `git clone git repo link` (Make sure you have an access to the repositry)
 -   `cd project-folder`
 -   `npm install `
 -   `npm run start`

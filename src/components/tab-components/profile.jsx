@@ -10,7 +10,7 @@ function Profile() {
         { label_for: 'name', labelText: 'Your Name', inputType: 'text', placeholderText: 'Charlene Reed' },
         { label_for: 'lastName', labelText: 'Last Name', inputType: 'text', placeholderText: 'Reed' },
         { label_for: 'email', labelText: 'Email', inputType: 'email', placeholderText: 'charlenereed@gmail.com' },
-        { label_for: 'password', labelText: 'Password', inputType: 'password', placeholderText: '*******' },
+        { label_for: 'password', labelText: 'Password', inputType: 'password', placeholderText: '*******', isPassword: true, },
         {
             label_for: 'dateOfBirth',
             labelText: 'Date of Birth',
@@ -79,6 +79,7 @@ function Profile() {
                                     options={field.options || []}
                                     name={field.label_for}
                                 />
+
                             ))}
                         </div>
                         <div className="flex items-center justify-end mt-10">
