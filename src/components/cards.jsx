@@ -7,10 +7,10 @@ import blackCircle from '../assets/images/black-circle.svg'
 function Cards() {
     const creditcards = [
         {
-            balanceText: 'Balance', balance: '$5756', icon1: simChip, icon2: cardCircle, cardNumber: '3778 38725741234', ownerName: 'Eddy Cusuma', ExpiryText: 'Expiry Date', ExpiryDate: '12 / 23', cardType: 'Credit Card', ownerText: 'CARD HOLDER',
+            balanceText: 'Balance', balance: '$5756', icon1: simChip, icon2: cardCircle, cardNumber: '377838725741234', ownerName: 'Eddy Cusuma', ExpiryText: 'Expiry Date', ExpiryDate: '12 / 23', cardType: 'Credit Card', ownerText: 'CARD HOLDER',
         },
         {
-            balanceText: 'Balance', balance: '$5756', icon1: simChip2, icon2: blackCircle, cardNumber: '3778 38725741234', ownerName: 'Eddy Cusuma', ExpiryText: 'Expiry Date', ExpiryDate: '12/23', cardType: 'Credit Card', ownerText: 'CARD HOLDER',
+            balanceText: 'Balance', balance: '$5756', icon1: simChip2, icon2: blackCircle, cardNumber: '377838725741234', ownerName: 'Eddy Cusuma', ExpiryText: 'Expiry Date', ExpiryDate: '12/23', cardType: 'Credit Card', ownerText: 'CARD HOLDER',
         }
 
     ];
