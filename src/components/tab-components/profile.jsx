@@ -34,7 +34,7 @@ function Profile() {
     // FUNCTION TO SEND DATA THROUGH API
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('https://jsonplaceholder.typicode.com/', post)
+        axios.post('https://jsonplaceholder.typicode.com/posts', post)
             .then(response => console.log(response))
             .then(() => setModalVisible(true))
             .catch(error => console.log(error));

@@ -16,7 +16,7 @@ const App = () => {
     { path: "/credit-cards", element: <PageNotFound /> },
     { path: "/loans", element: <PageNotFound /> },
     { path: "/services", element: <PageNotFound /> },
-    { path: "/my-privileges", element: <PageNotFound /> },
+    { path: "/privileges", element: <PageNotFound /> },
     { path: "/settings", element: <Settings /> },
   ];
 
