@@ -7,13 +7,22 @@ import blackCircle from '../assets/images/black-circle.svg'
 function Cards() {
     const creditcards = [
         {
-            balanceText: 'Balance', balance: '$5756', icon1: simChip, icon2: cardCircle, cardNumber: '3778 **** **** 1234', ownerName: 'Eddy Cusuma', ExpiryText: 'Expiry Date', ExpiryDate: '12 / 23', cardType: 'Credit Card', ownerText: 'CARD HOLDER',
+            balanceText: 'Balance', balance: '$5756', icon1: simChip, icon2: cardCircle, cardNumber: '377838725741234', ownerName: 'Eddy Cusuma', ExpiryText: 'Expiry Date', ExpiryDate: '12 / 23', cardType: 'Credit Card', ownerText: 'CARD HOLDER',
         },
         {
-            balanceText: 'Balance', balance: '$5756', icon1: simChip2, icon2: blackCircle, cardNumber: '3778 **** **** 1234', ownerName: 'Eddy Cusuma', ExpiryText: 'Expiry Date', ExpiryDate: '12/23', cardType: 'Credit Card', ownerText: 'CARD HOLDER',
+            balanceText: 'Balance', balance: '$5756', icon1: simChip2, icon2: blackCircle, cardNumber: '377838725741234', ownerName: 'Eddy Cusuma', ExpiryText: 'Expiry Date', ExpiryDate: '12/23', cardType: 'Credit Card', ownerText: 'CARD HOLDER',
         }
 
     ];
+    
+        const maskCardNumber = (number) => {
+            if (!number || number.length !== 15) {
+                return 'Invalid Card Number';
+        }
+        return number.slice(0, 4) + " **** **** " + number.slice(11, 16);
+    }
+    
+
     return (
         <>
             <div className='flex lg:overflow-hidden  gap-[30px] w-full justify-between'>
@@ -40,7 +49,7 @@ function Cards() {
                                 </div>
                             </div>
                             <div className={`flex px-6  items-center justify-between rounded-b-3xl  py-[15px] ${index === 0 ? 'bg-[#5B5A6F]' : 'border-t-[1px]'}`}>
-                                <p className={`text-[22px] font-lato font-[600] ${index === 1 ? 'text-[#343C6A]' : 'text-white'}`}>{creditcards.cardNumber}</p>
+                                <p handl className={`text-[22px] font-lato font-[600] ${index === 1 ? 'text-[#343C6A]' : 'text-white'}`}>{maskCardNumber(creditcards.cardNumber)}</p>
                                 <img src={creditcards.icon2} alt="" />
                             </div>
                         </div>

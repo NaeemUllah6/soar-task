@@ -1,6 +1,4 @@
 import React from 'react'
-import blackCard from '../assets/images/black-card.svg';
-import whiteCard from '../assets/images/white-card.svg';
 import Eclipse1 from '../assets/images/eclips.svg';
 import Eclipse2 from '../assets/images/eclips2.svg';
 import BarChart from '../components/barChart'
